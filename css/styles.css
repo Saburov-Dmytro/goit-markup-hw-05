@@ -633,13 +633,14 @@ button {
   margin-bottom: 9px;
 }
 
+
 .footer-email:focus,
-.footer-email:hover  {
+.footer-email:hover {
   color: var(--accent-color);
 }
 
 .footer-tel:focus,
-.footer-tel:hover  {
+.footer-tel:hover {
   color: var(--accent-color);
 }
 
