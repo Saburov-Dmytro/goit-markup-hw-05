@@ -73,7 +73,8 @@
       <section class="hero">
         <div class="header-overlay">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-link">Заказать услугу</a>
+          <!-- <a href="" class="hero-link" data-modal-open>Заказать услугу</a> -->
+          <button class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -146,23 +147,36 @@
           <h2 class="issues-title">Чем мы занимаемся</h2>
           <ul class="issues-list">
             <li class="issues-item">
-              <img
-                src="./images/our_projects_1.jpg"
-                alt="Архитектура и логика"
-                width="370"
-              />
+              <div class="issues-item-thumb">
+                <img
+                  src="./images/our_projects_1.jpg"
+                  alt="Архитектура и логика"
+                  width="370"
+                />
+                <p class="issues-image-text">Десктопные приложения</p>
+              </div>
             </li>
 
             <li class="issues-item">
-              <img
-                src="./images/our_projects_2.jpg"
-                alt="Разработка интерфейса"
-                width="370"
-              />
+              <div class="issues-item-thumb">
+                <img
+                  src="./images/our_projects_2.jpg"
+                  alt="Разработка интерфейса"
+                  width="370"
+                />
+                <p class="issues-image-text">Мобильные приложения</p>
+              </div>
             </li>
 
             <li class="issues-item">
-              <img src="./images/our_projects_3.jpg" alt="Дизайн" width="370" />
+              <div class="issues-item-thumb">
+                <img
+                  src="./images/our_projects_3.jpg"
+                  alt="Дизайн"
+                  width="370"
+                />
+                <p class="issues-image-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -479,5 +493,33 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic optio
+          dicta pariatur nostrum sequi aspernatur itaque dolorem veniam delectus
+          voluptatum eveniet ipsa exercitationem velit, sint, blanditiis
+          obcaecati cum dolores, accusamus culpa sed. Facilis fuga incidunt
+          explicabo eaque? Autem nulla quod sapiente, dolores fugit nostrum
+          accusantium architecto reiciendis quia! Earum quae eligendi incidunt
+          assumenda labore debitis molestiae! Itaque blanditiis minus ipsam
+          illum maiores quam ipsa, omnis sapiente aut tempora quia officia
+          explicabo officiis facere, quos tenetur, esse odit saepe laudantium?
+          Iusto incidunt nihil laborum similique nostrum est ratione asperiores
+          quisquam sit? Fuga quisquam quae velit corrupti debitis voluptate
+          quibusdam minus.
+        </p>
+        <button class="modal-close-button" data-modal-close>
+          <svg class="modal-close-svg" width="30" height="30">
+            <use href="./images/logo-svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
